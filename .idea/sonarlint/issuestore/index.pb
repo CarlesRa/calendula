@@ -1,6 +1,4 @@
 
-9
-	gitignore,6\f\6f819b366cb83f2e62d7b8b23b65c2e28c01306a
 V
 &src/components/toolbar/toolbar.test.ts,b\8\b88f62c98de9594c6b8571d51eef57663a8da5c4
 ;
@@ -26,3 +24,6 @@ X
 index.html,f\6\f6013a00b362253c64368d6eebc50ea2131754e2
 a
 1src/components/floating-button/floating-button.ts,4\c\4cb17c779edf141f0ce462f6715124717a07d07e
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
