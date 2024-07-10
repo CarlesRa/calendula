@@ -1,12 +1,25 @@
 import './style.css'
-import { toolbar } from './components/toolbar/toolbar';
+import { toolbar, setGoToHomeListener } from './components/toolbar/toolbar.ts';
 import { home } from './components/home/home.ts';
-import { products } from './components/prducts/products.ts';
+import { products, setProductAnimation } from './components/prducts/products.ts';
+import { floatingButton } from './components/floating-button/floating-button.ts';
 
-const app: HTMLDivElement = document.querySelector<HTMLDivElement>('#app')!;
+document.addEventListener('DOMContentLoaded', () => {
 
-app.innerHTML = `
-  ${toolbar()}
-  ${home()}
-  ${products()}
-`;
+  const app: HTMLDivElement = document.querySelector<HTMLDivElement>('#app')!;
+  app.innerHTML = `
+    ${ toolbar() }
+    ${ home() }
+    ${ products() }
+    ${ floatingButton() }
+  `;
+
+  const startBtn: HTMLAnchorElement = document.querySelector<HTMLAnchorElement>('#startBtn')!
+  setGoToHomeListener(startBtn);
+
+  const productsSection: NodeListOf<HTMLElement[]> = document.querySelectorAll<HTMLElement[]>('.product');
+  productsSection.forEach(product => {
+    setProductAnimation(product as HTMLElement)
+  });
+});
+

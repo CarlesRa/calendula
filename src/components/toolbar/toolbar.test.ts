@@ -5,7 +5,7 @@ test('Return the toolbar', () => {
   expect(toolbar()).equal(`
     <header class="toolbar">
       <nav class="toolbar-content">
-        <a href="#">Inicio</a>
+        <a id="startBtn" href="#">Inicio</a>
         <a href="#products">Productos</a>
         <a href="#">Contacto</a>
       </nav>

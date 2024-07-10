@@ -17,3 +17,12 @@ R
 "src/components/prducts/products.ts,0\6\06a0407b6add936d4cb9652752624dcb15243d73
 H
 sonar-project.properties,2\5\2538046035efb77ecc44e1fd2eec1e2641594d4c
+=
+src/style.css,1\9\199c81d8625cb1aaa85a72e49e4ad72a9fed6766
+X
+(node_modules/typescript/lib/lib.dom.d.ts,7\6\769405d18246a75b5b27d787a1de78a989e4955a
+:
+
+index.html,f\6\f6013a00b362253c64368d6eebc50ea2131754e2
+a
+1src/components/floating-button/floating-button.ts,4\c\4cb17c779edf141f0ce462f6715124717a07d07e
