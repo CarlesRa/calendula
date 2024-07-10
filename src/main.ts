@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const startBtn: HTMLAnchorElement = document.querySelector<HTMLAnchorElement>('#startBtn')!
   setGoToHomeListener(startBtn);
 
-  const productsSection: NodeListOf<HTMLElement[]> = document.querySelectorAll<HTMLElement[]>('.product');
+  const productsSection = document.querySelectorAll<any>('.product');
   productsSection.forEach(product => {
-    setProductAnimation(product as HTMLElement)
+    setProductAnimation(product)
   });
 });
 
