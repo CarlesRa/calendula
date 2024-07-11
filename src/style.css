@@ -28,11 +28,15 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url("https://img2.wallspic.com/crops/4/0/0/8/2/128004/128004-planta_anual-fabrica-la_botanica-amarillo-petalo-1920x1080.jpg");
+  background-image:
+          url("https://img2.wallspic.com/crops/4/0/0/8/2/128004/128004-planta_anual-fabrica-la_botanica-amarillo-petalo-1920x1080.jpg"),
+          linear-gradient(
+                  black 80%,
+                  transparent
+          );
   background-repeat: no-repeat;
   background-size: contain;
   scroll-behavior: smooth;
-  background-color: black;
 }
 
 h1 {
@@ -61,6 +65,13 @@ button:focus-visible {
 
 p {
   font-size: 1.2rem;
+}
+
+img {
+  mask-image: linear-gradient(
+          black 80%,
+          transparent
+  );
 }
 
 #app {
@@ -120,12 +131,39 @@ p {
   place-content: center;
   font-size: 5rem;
 }
-.whatsapp-icon {
+.social-media-container {
   position: fixed;
-  top: 50%;
-  bottom: 50%;
-  right: 1%;
-  font-size: 5rem;
+  border-top: 1px solid #ffffff20;
+  border-left: 1px solid #ffffff20;
+  border-botom: 1px solid #ffffff20;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: #ffffff30;
+  backdrop-filter: blur(3px) saturate(80%);
+  top: 33.3%;
+  right: 0%;
+  height: 33%;
+  width: 10%;
+  max-width: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  .social-media-icon {
+    font-size: 2rem;
+  }
+  .whatsapp {
+    color: #25D366;
+  }
+  .instagram {
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .facebook {
+    color: #1877F2;
+  }
 }
 
 .product-image-container {
