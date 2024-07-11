@@ -232,6 +232,7 @@ img {
   }
   body {
     background-size: contain;
+    background-attachment: scroll;
   }
   .card-transparent {
     max-width: 90vw;
