@@ -146,7 +146,7 @@ img {
   backdrop-filter: blur(3px) saturate(80%);
   top: 33.3%;
   right: 0%;
-  height: 33%;
+  height: 35vh;
   width: 10%;
   max-width: 50px;
   display: flex;
