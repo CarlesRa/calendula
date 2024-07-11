@@ -35,7 +35,8 @@ body {
                   transparent
           );
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-attachment: fixed;
   scroll-behavior: smooth;
 }
 
