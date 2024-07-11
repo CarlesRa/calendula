@@ -83,6 +83,9 @@ img {
 .toolbar {
   display: flex;
   place-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   .toolbar-content {
     display: flex;
     place-content: center;
@@ -151,6 +154,7 @@ img {
   justify-content: space-around;
   align-items: center;
   gap: 10px;
+  box-sizing: border-box;
   .social-media-icon {
     font-size: 2rem;
   }

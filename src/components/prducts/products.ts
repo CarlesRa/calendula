@@ -1,7 +1,7 @@
 export function products(): string {
   return `
     <section id="products">
-      <h1 class="center">Productos</h1>
+      <h1 class="center" aria-label="productos">Productos</h1>
       <article class="product">
         <div class="center">
           <h2>Por qué elegimos distribuir Mac Cosmetics</h2>
