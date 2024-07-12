@@ -35,8 +35,8 @@ body {
                   transparent
           );
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: auto;
+  /*background-attachment: scroll;*/
   scroll-behavior: smooth;
 }
 
@@ -66,13 +66,6 @@ button:focus-visible {
 
 p {
   font-size: 1.2rem;
-}
-
-img {
-  mask-image: linear-gradient(
-          black 80%,
-          transparent
-  );
 }
 
 #app {
@@ -194,9 +187,12 @@ img {
   text-align: center;
 }
 
+.c-pointer {
+  cursor: pointer;
+}
+
 @keyframes slideInFromLeft {
   0% {
-    transform: translateX(-100%);
     transform: rotate(0deg);
   }
   25% {
@@ -206,7 +202,6 @@ img {
     transform: rotate(-5deg);
   }
   100% {
-    transform: translateX(0);
     transform: rotate(0deg);
   }
 }
@@ -246,11 +241,5 @@ img {
   }
   .chevron {
     font-size: 2rem;
-  }
-  .whatsapp-icon {
-    position: fixed;
-    bottom: 1%;
-    right: 1%;
-    font-size: 4rem;
   }
 }
